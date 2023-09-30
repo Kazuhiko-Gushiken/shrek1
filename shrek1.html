@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shrek 1</title>
+        <style>
+            
+        </style>
+    </head>
+<body>
+
+    <span id="clock"></span>
+    <p id="idCurrentHour"></p>
+    <p id="idCurrentMinute"></p>
+    <p id="idCurrentSecond"></p>
+
+    <h2 id="idTotalMinutes"></h2>
+
+    <h1 style="font-size: 113px; text-align: center;" id="idShrek1"></h1>
+</body>
+  <script type="text/javascript">
+    var clockElement = document.getElementById('clock');
+
+    function clock() {
+        var curDate = new Date();
+        var curDisplay = document.getElementById('idCurrentHour');
+        curDisplay.innerHTML = "Hours Current " + curDate.getHours();
+        var curDisplay = document.getElementById('idCurrentMinute');
+        curDisplay.innerHTML = "Minutes Current " + curDate.getMinutes();
+        var curDisplay = document.getElementById('idCurrentSecond');
+        curDisplay.innerHTML = "Seconds Current " + curDate.getSeconds();
+
+        let x = curDate.getHours() * 60;
+        let y = curDate.getSeconds() / 60;
+        let z = x + y + curDate.getMinutes();
+        var curDisplay = document.getElementById('idTotalMinutes');
+        curDisplay.innerHTML = "Total Minutes " + z;
+        let s = z / 90;
+        var curDisplay = document.getElementById('idShrek1');
+        curDisplay.innerHTML = s + " Shrek 1s";
+
+        // Replace '400px' below with where you want the format to change.
+        if (window.matchMedia('(max-width: 400px)').matches) {
+            // Use this format for windows with a width up to the value above.
+            clockElement.textContent = curDate.toLocaleString();
+        } else {
+            // While this format will be used for larger windows.
+            clockElement.textContent = curDate.toString();
+        }
+    }
+
+    setInterval(clock, 1000);
+</script>
+</html>
