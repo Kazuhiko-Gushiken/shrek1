@@ -15,10 +15,10 @@
     <p id="idCurrentHour"></p>
     <p id="idCurrentMinute"></p>
     <p id="idCurrentSecond"></p>
+    <p id="idTotalMinutes"></p>
+    <h2 style="font-size: 113px; text-align: center;" id="idShrek1"></h2>
 
-    <h2 id="idTotalMinutes"></h2>
-
-    <h1 style="font-size: 113px; text-align: center;" id="idShrek1"></h1>
+    <h1 style="font-size: 113px; text-align: center;" id="idShrek2"></h1>
 </body>
   <script type="text/javascript">
     var clockElement = document.getElementById('clock');
@@ -40,6 +40,10 @@
         let s = z / 90;
         var curDisplay = document.getElementById('idShrek1');
         curDisplay.innerHTML = s + " o'shrek";
+        let num = s;
+        let r = num.toFixed(2);
+        var curDisplay = document.getElementById('idShrek2');
+        curDisplay.innerHTML = r + " o'shrek";
 
         // Replace '400px' below with where you want the format to change.
         if (window.matchMedia('(max-width: 400px)').matches) {
