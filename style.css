@@ -1,0 +1,82 @@
+.p-inline{
+  display: inline;
+}
+br{
+  display: block;
+  content: "";
+  margin:5px 0;
+}
+p {
+  color: #FFFFFF;
+}
+h1 {
+  color: #FFFFFF;
+}
+h2 {
+  color: #FFFFFF;
+}
+hr {
+  color: #FFFFFF;
+}
+a:link {
+  color: #FFFFFF;
+}
+a:visited {
+  color: #FFFFFF;
+}
+a:hover {
+  color: #FFFFFF;
+}
+a:active {
+  color: #FFFFFF;
+}
+span {
+  color: #FFFFFF;
+}
+body {
+  background-attachment: fixed;
+  content: "";
+  display: block;
+  height: var(--background-height);
+  left: 0;
+  pointer-events: auto;
+  position: inital;
+  top: 0;
+  transform: scale(1);
+  width: 100vw;
+  z-index: 0;
+  background-image: url('./images/cross.svg');
+  background-size: 13px;
+  background-position: center;
+  background-repeat: repeat;
+  background-color: black;
+  word-wrap: normal;
+  overflow-x: hidden;
+  max-width: 99%;
+}
+body {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.noCopy {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+button {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
