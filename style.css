@@ -80,3 +80,10 @@ button {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+.container {
+   text-align: center;
+}
+.container pre {
+  display: inline-block;
+  text-align: left;
+ }
