@@ -85,7 +85,6 @@ button {
     margin-top: 200px;
 }
 .container pre {
-  text-align: left;
   display: block;
   font-family: monospace;
   white-space-collapse: preserve;
